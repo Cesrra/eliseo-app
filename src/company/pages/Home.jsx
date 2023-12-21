@@ -1,6 +1,11 @@
+import { CompanyLayout } from "../layout/CompanyLayout"
 
 export const Home = () => {
   return (
-    <div>Home</div>
+    <CompanyLayout>
+      <div className="h-screen p-8">
+      Home
+      </div>
+    </CompanyLayout>
   )
 }
