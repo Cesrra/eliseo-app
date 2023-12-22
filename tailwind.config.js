@@ -2,7 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: [
+  content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
@@ -322,12 +322,6 @@ module.exports = {
         greenoutline: '-2px -15px 0px 2px rgb(50 159 31 / 70%)'
       },
     },
-  },
-  variants: {
-    scale: ['responsive', 'hover', 'focus', 'group-hover'],
-    textColor: ['responsive', 'hover', 'focus', 'group-hover'],
-    opacity: ['responsive', 'hover', 'focus', 'group-hover'],
-    backgroundColor: ['responsive', 'hover', 'focus', 'group-hover'],
   },
   plugins: [],
 }
