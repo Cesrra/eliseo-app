@@ -5,19 +5,19 @@ import { NavbarELements } from "./NavbarElements";
 import { HandleMobileMenu } from "../HandleMobileMenu";
 
 const navbar_elements = [
-  {key: "Empresa", path: '/company', hasDropDownMenu: true,
+  {key: "Empresa", path: '/corporation', hasDropDownMenu: true,
     dropDownMenus: [
-      {key: "Visión", path: '/company/vision'},
-      {key: "Misión", path: '/company/mision'},
-      {key: "Filosofía", path: '/company/philosophy'},
-      {key: "Cursos", path: '/company/courses'},
-      {key: "Mentorías", path: '/company/mentorships'},
-      {key: "Coaching", path: '/company/coaching'},
-      {key: "Consultorías", path: '/company/consultancies'},
-      {key: "Marketing Político", path: '/company/political-marketing'},
+      {key: "Visión", path: '/corporation/vision'},
+      {key: "Misión", path: '/corporation/mision'},
+      {key: "Filosofía", path: '/corporation/philosophy'},
+      {key: "Cursos", path: '/corporation/courses'},
+      {key: "Mentorías", path: '/corporation/mentoring'},
+      {key: "Coaching", path: '/corporation/coaching'},
+      {key: "Consultorías", path: '/corporation/consulting'},
+      {key: "Marketing Político", path: '/corporation/political-marketing'},
     ]
   },
-  {key: "Sobre Mí", path: '/about-us', hasDropDownMenu: false}, 
+  {key: "Sobre Mí", path: '/about', hasDropDownMenu: false}, 
   {key: "Eventos", path: '/events', hasDropDownMenu: true,
     dropDownMenus: [
       {key: "Vídeos", path: '/events/videos'},
@@ -25,13 +25,13 @@ const navbar_elements = [
       {key: "Conferencias", path: '/events/conferences'},
       {key: "Política", path: '/events/politics'},
       {key: "Podcast", path: '/events/podcast'},
-      {key: "Viajes", path: '/events/travel'},
+      {key: "Viajes", path: '/events/travels'},
     ]
   },
-  {key: "Blog", path: '/about-us', hasDropDownMenu: true,
+  {key: "Blog", path: '/blog', hasDropDownMenu: true,
     dropDownMenus: [
-      {key: "Artículos ", path: '/about-us/articles'},
-      {key: "Pensamientos", path: '/about-us/reflections'},
+      {key: "Artículos ", path: '/blog/articles'},
+      {key: "Pensamientos", path: '/blog/reflections'},
     ]
   },
   {key: "Libros", path: '/books', hasDropDownMenu: true,
@@ -45,15 +45,15 @@ const navbar_elements = [
     ]
   },
   {key: "Equipo", path: '/team', hasDropDownMenu: false},
-  {key: "Contactanos", path: '/contact-us', hasDropDownMenu: false}
+  {key: "Contactos", path: '/contacts', hasDropDownMenu: false}
 ]
 
 export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-      <nav className="bg-white h-20">
-        <div className="flex items-center h-full font-medium justify-around">
+      <nav className="bg-white h-20 w-screen">
+        <div className="flex items-center h-full mr-4 font-medium justify-around p-4">
           <div
             aria-label="Company"
             title="Company"
