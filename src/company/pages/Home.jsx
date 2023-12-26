@@ -3,7 +3,7 @@ import { CompanyLayout } from "../layout/CompanyLayout"
 export const Home = () => {
   return (
     <CompanyLayout>
-      <div className="h-screen p-8">
+      <div className="">
       Home
       </div>
     </CompanyLayout>

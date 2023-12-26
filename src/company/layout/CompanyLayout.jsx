@@ -2,9 +2,11 @@ import { Navbar } from "../../UI/navbar/Navbar";
 
 export const CompanyLayout = ({ children }) => {
   return (
-    <div>
-        <Navbar />
-        { children }
+    <>
+    <Navbar />
+    <div className="h-screen p-8">
+      { children }
     </div>
+    </>
   )
 }
