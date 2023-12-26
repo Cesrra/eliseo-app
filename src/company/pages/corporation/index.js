@@ -1,3 +1,4 @@
+export * from './Corporation'
 export * from './Vision'
 export * from './Mision'
 export * from './Philosophy'

@@ -1,9 +1,10 @@
 import { Navigate, Route, Routes } from "react-router"
-import { Conferences, Interviews, Podcast, Politics, Travels, Videos } from "../pages/events"
+import { Conferences, Events, Interviews, Podcast, Politics, Travels, Videos } from "../pages/events"
 
 export const EventsRoutes = () => {
   return (
     <Routes>
+      <Route path="/" element={ <Events /> } />
       <Route path="/videos" element={ <Videos /> } />
       <Route path="/interviews" element={ <Interviews /> } />
       <Route path="/conferences" element={ <Conferences /> } />

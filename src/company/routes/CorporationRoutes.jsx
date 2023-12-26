@@ -1,9 +1,10 @@
 import { Navigate, Route, Routes } from "react-router"
-import { Vision, Mision, Philosophy, Courses, Mentoring, Coaching, Consulting, PoliticalMarketing } from "../pages/corporation"
+import { Corporation, Vision, Mision, Philosophy, Courses, Mentoring, Coaching, Consulting, PoliticalMarketing } from "../pages/corporation"
 
 export const CorporationRoutes = () => {
   return (
     <Routes>
+      <Route path="/" element={ <Corporation /> } />
       <Route path="/vision" element={ <Vision /> } />
       <Route path="/mision" element={ <Mision /> } />
       <Route path="/philosophy" element={ <Philosophy /> } />

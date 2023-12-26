@@ -8,13 +8,14 @@ export const NavbarLinks = ({ element }) => {
 
   return (
     <div className="text-left cursor-pointer group">
-      <h4
+      <Link
+        to={element.path}
         className="transition-colors duration-200 hover:text-deep-orange-accent-400 py-2 flex justify-between items-center md:pr-0 pr-5 group" 
         onClick={ () => heading !== element.key ? setHeading(element.key) : setHeading('')}
       >
         { element.key }
         {element.hasDropDownMenu && <RowHandle elementKey={element.key} heading={heading} />}
-      </h4>
+      </Link>
       { element.hasDropDownMenu && (
         <>
           <div className={`md:absolute md:hidden group-hover:md:block hover:md:block`}>
