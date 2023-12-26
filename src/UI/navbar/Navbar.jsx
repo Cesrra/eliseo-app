@@ -45,15 +45,15 @@ const navbar_elements = [
     ]
   },
   {key: "Equipo", path: '/team', hasDropDownMenu: false},
-  {key: "Contactanos", path: '/contact-us', hasDropDownMenu: false}
+  {key: "Contactos", path: '/contact-us', hasDropDownMenu: false}
 ]
 
 export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-      <nav className="bg-white h-20">
-        <div className="flex items-center h-full font-medium justify-around">
+      <nav className="bg-white h-20 w-screen">
+        <div className="flex items-center h-full mr-4 font-medium justify-around p-4">
           <div
             aria-label="Company"
             title="Company"
